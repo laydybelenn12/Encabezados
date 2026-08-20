@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Encabezado - Reporte de Avance Semanal</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    background: #ffffff;
+  }
+  .banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 28px;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    border-bottom: 3px solid #EE7203;
+  }
+  .text-block {
+    position: relative;
+    z-index: 2;
+  }
+  .text-block h1 {
+    margin: 0;
+    line-height: 1.05;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+  }
+  .text-block h1.line-orange { color: #EE7203; }
+  .text-block h1.line-black  { color: #1a1a1a; }
+  .subtitle {
+    margin: 8px 0 0 0;
+    font-size: 13px;
+    font-weight: 700;
+    color: #EE7203;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    border-bottom: 2px solid #EE7203;
+    padding-bottom: 3px;
+  }
+  .diagonal-line {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 55%;
+    height: 60px;
+    border-top: 3px solid #EE7203;
+    border-radius: 0 0 0 40px;
+    transform: skewY(-4deg);
+    transform-origin: left bottom;
+    z-index: 1;
+    pointer-events: none;
+  }
+  .logo-block {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .logo-block img {
+    max-height: 64px;
+    max-width: 220px;
+    object-fit: contain;
+  }
+</style>
+</head>
+<body>
+  <div class="banner">
+    <div class="text-block">
+      <h1 class="line-orange">REPORTE DE</h1>
+      <h1 class="line-black">AVANCE SEMANAL</h1>
+      <div class="subtitle">Información de iniciativa</div>
+    </div>
+    <div class="logo-block">
+      <img src="https://facturacion.oxxogas.com/resources/images/oxxo_gas.png" alt="OXXO GAS">
+    </div>
+  </div>
+</body>
+</html>
